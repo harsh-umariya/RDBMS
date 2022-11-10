@@ -1,0 +1,41 @@
+SELECT * from staff_master;
+
+SELECT * FROM staff_master where STAFF_ID=3;
+
+SELECT * FROM staff_master where ADD1 like'%l%';
+
+SELECT * FROM staff_master where STAFF_ID between 2 and 4;
+SELECT * from staff_master;
+
+SELECT * FROM staff_master where STAFF_ID=3;
+
+SELECT * FROM staff_master where ADD1 like'%l%';
+
+SELECT * FROM staff_master where STAFF_ID between 2 and 4;
+
+select ABS(-15) from DUAL;
+
+select MOD (5,2)from DUAL;
+
+select ROUND(46.235,1)from DUAL;
+
+select TRUNC(143.156,-1)form DUAL;
+
+select  sqrt (4) from DUAL;
+
+SELECT * from office_master;
+
+select TO_NUMBER ('1234.56') from dual;
+
+select TO_CHAR (SYSDATE,'DD Month, YYYY') from dual;
+
+select TO_DATE ('31 December 2021','DD Month YYYY') from dual;
+
+select TO_CHAR (123456,'09,99,999') from dual;
+
+select AVG(emp_salary) "Average" from office_master;
+select MAX(emp_salary) "Maximum" from office_master;
+select MIN(emp_salary) "Minimum" from office_master;
+select COUNT(*) "Total" from office_master;
+
+
