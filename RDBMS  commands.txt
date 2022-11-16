@@ -1,0 +1,14 @@
+select LOWER('HARSH')from dual;
+select UPPER ('harsh')from dual;
+select LPAD ('HARSH',8,'$')from dual;
+select RPAD ('HARSH',8,'$')from dual;
+select SUBSTR ('harshumariya',6,7)from dual;
+select INITCAP('hello world')from dual;
+select TRANSLATE('Harsh.d.u','a','H')from dual;
+select REPLACE('DHRUV HARSH','DHRUV','HARSH')from dual;
+
+
+
+
+select LTRIM ('harsh',10,'$')from dual;
+select RTRIM ('harsh',10,'$')from dual;
