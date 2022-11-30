@@ -38,4 +38,20 @@ select MAX(emp_salary) "Maximum" from office_master;
 select MIN(emp_salary) "Minimum" from office_master;
 select COUNT(*) "Total" from office_master;
 
+PR:6
+CREATE TABLE EMPLY (ID varchar2(10),Name varchar2(25),Salary varchar2(25),Address varchar2(25));
+INSERT INTO EMPLY (ID, Name, Salary, Address) VALUES ('05', 'Raj', '50000', 'Bangulur'); 
+SELECT * FROM EMPLY;
+SELECT AVG(Salary) FROM EMPLY;
+SELECT MIN(Salary) FROM EMPLY;
+SELECT MAX(Salary) FROM EMPLY;
+SELECT COUNT(Salary) FROM EMPLY;
+SELECT SUM(Salary) FROM EMPLY;
+
+
+CREATE TABLE STU1 (ID varchar2(10),NAME varchar2(25));
+INSERT INTO STU1 (ID, Name) VALUES ('03', 'om'); 
+SELECT * FROM STU1;
+SELECT NAME, DECODE (ID,003,'Harsh',001,'shubham') result from STU1;
+
 
