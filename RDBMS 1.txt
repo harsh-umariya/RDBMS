@@ -1,0 +1,20 @@
+CREATE TABLE EMPLOYEE1
+(
+EmployeeID Number(20) PRIMARY KEY,
+EmployeeName varchar(100)NOT NULL,
+Gender varchar(1)NOT NULL,
+StateCode varchar(20)NOT NULL,
+Salary Number(20)NOT NULL
+);
+DESC EMPLOYEE1; 
+SELECT * FROM EMPLOYEE1;
+INSRT INTO EMPLOYEE1 
+INSERT INTO EMPLOYEE1 VALUES (05,'Drashti','F',394250,35000); 
+
+
+SELECT EMPLOYEENAME,
+CASE
+WHEN Salary>=20000 AND salary<=35000 THEN 'Employee'
+WHEN Salary>=15000 AND salary<=20000 THEN 'Manneger'
+else 'director'
+END as Designation FROM EMPLOYEE1;
