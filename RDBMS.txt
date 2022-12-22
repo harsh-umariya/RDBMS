@@ -1,0 +1,35 @@
+create table emp01(e_id int,e_name varchar2 (20),e_address varchar2 (20),e_salary varchar2 (20),j_date varchar2(30));
+insert into emp01 values(10,'dhruv','surat',20000,'20jan22');
+insert into emp01 values(20,'ved','dindoli',25000,'10feb20');
+insert into emp01 values(30,'pashav','adajan',30000,'15aug21');
+insert into emp01 values(40,'hitesh','palsana',35000,'23sept20');
+insert into emp01 values(50,'aman','dindoli',30000,'19nov22');
+alter table emp01 add(j_date varchar2 (30));
+select * from emp01;
+select max(e_salary)from emp01;
+select * from emp01 where e_salary=(select max(e_salary)from emp01);
+select min(e_salary) from emp01;
+select * from emp01 where e_salary=(select min(e_salary)from emp01);
+select * from emp01 where e_salary < (select max(e_salary) from emp01);
+select * from emp01 where e_salary > (select min(e_salary) from emp01);
+
+select * from emp01 where e_name like'a%';
+select * from emp01 where e_name like'__s__';
+select * from emp01 where e_salary in (25000,20000,30000);
+select * from emp01 where e_salary not in (25000,20000,30000);
+
+create table emp02 as select * from emp01;
+select * from emp02;
+select * from emp02 where e_salary between 25000 and 30000;
+select * from emp01 where j_date between '15aug21' and '20jan22';
+
+select * from emp01;
+delete from emp02 where e_id in (40,50);
+drop table emp02;
+select * from emp01 where e_name not in ('aman');
+
+
+
+
+
+
